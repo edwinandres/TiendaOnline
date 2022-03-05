@@ -1,0 +1,59 @@
+﻿@model IEnumerable<TiendaOnline.Models.Categoria>;
+@{
+
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Lista de Categorias</h2>
+        </div>
+        <div class="col-6">
+            <a asp-controller="Categoria" asp-action="Create" class="btn btn-primary">
+                <i class="fas fa-plus"></i>
+                Nueva categoria
+            </a>
+        </div>
+    </div>
+    <br/>
+    @if(Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Nombre Categoria</th>
+                    <th>Orden</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var categoria in Model)
+                {
+                    <tr>
+                        <td width="50%">@categoria.NombreCategoria</td>
+                        <td width="30%">@categoria.MostrarOrden</td>
+                        <td width="20%" class="text-center">
+                            <div class="w-75 btn-group" role="group">
+                                <a asp-controller="Categoria" asp-action="Edit" asp-route-Id="@categoria.Id" class="btn btn-primary mx-2">
+                                    <i class="fas fa-edit"></i>
+                                    @*Editar*@
+                                </a>
+                                <a asp-controller="Categoria" asp-action="Delete" asp-route-Id="@categoria.Id" class="btn btn-danger" mx-2>
+                                    <i class="fas fa-trash"></i>
+                                    @*Eliminar*@
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No se encontraron registros en la tabla</p>
+    }
+</div>

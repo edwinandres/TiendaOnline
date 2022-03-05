@@ -1,0 +1,53 @@
+﻿@model IEnumerable<TiendaOnline.Models.TipoAplicacion>;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Lista de Tipos de Aplicación</h2>
+        </div>
+        <div class="col-6">
+            <a asp-controller="TipoAplicacion" asp-action="Create" class="btn btn-primary">Crear nuevo Tipo Aplicacion</a>
+        </div>
+    </div>
+    <br />
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td width="50%">@item.Nombre</td>
+                        @*<td width="20%"></td>*@
+                        <td width="30%">
+                            <div class="w-75 btn-group" role="group">
+                                <a asp-controller="TipoAplicacion" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary mx-2">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a asp-controller="TipoAplicacion" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger mx-2">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                            </div>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No se encontraron registros en la tabla</p>
+    }
+</div>
