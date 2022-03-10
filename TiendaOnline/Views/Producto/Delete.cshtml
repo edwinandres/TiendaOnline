@@ -1,0 +1,104 @@
+﻿@model TiendaOnline.Models.Producto;
+@{
+   var titulo = "Eliminar Producto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-action="Delete" method="post">
+   
+        <input asp-for="Id" hidden />
+    
+
+    <div class="border p-3">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="row">
+            <h2 class="text-info">@titulo</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label asp-for="NombreProducto" class="form-label">Nombre Producto</label>
+                            <input asp-for="NombreProducto" class="form-control" disabled />
+                           
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label asp-for="Precio" class="form-label">Precio</label>
+                            <input asp-for="Precio" class="form-control" disabled />                          
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label asp-for="DescripcionCorta" class="form-label">DescripcionCorta</label>
+                            <input asp-for="DescripcionCorta" class="form-control" disabled/>                          
+                        </div>
+                    </div>
+
+                    <div class="row" hidden>
+                        <div class="col-md-6">
+                            <label asp-for="DescripcionLarga" class="form-label">Descripcion Producto</label>
+                            <textarea asp-for="DescripcionLarga" class="form-control summernote"></textarea>
+                           
+                        </div>
+                    </div>
+
+                     <div class="row" hidden>
+                        <div class="col-md-6">
+                            <label asp-for="ImageUrl" class="form-label">Imagen</label>
+                            <input asp-for="ImageUrl" class="form-control" />                            
+                        </div>
+                    </div>
+
+                     <div class="row">
+                        <div class="col-md-6">
+                            <label asp-for="CategoriaId" class="form-label">Categoria</label>
+                            <input asp-for="Categoria.Id" class="form-control" hidden />
+                            <input asp-for="Categoria.NombreCategoria" class="form-control" disabled/>
+                                                    
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label asp-for="TipoAplicacionId" class="form-label">Tipo Aplicación</label>
+                            <input asp-for="TipoAplicacion.Id" class="form-control" hidden />
+                            <input asp-for="TipoAplicacion.Nombre" class="form-control" disabled/>                    
+                        </div>
+                    </div>
+
+                    <br/>
+
+                    <div class="d-grid gap-2 d-md-block">                     
+                        <button type="submit"  class="btn btn-danger">Eliminar</button>                        
+                        <a asp-controller="Producto" asp-action="Index" class="btn btn-success">Regresar</a>
+                    </div>
+
+                </div>
+            </div>
+           
+            <div class="col-4">
+                @if(Model.Id != 0)
+                {
+                    <img src="@WC.ImagenRuta@Model.ImageUrl" width="100%" style="border-radius: 5px border:1px solid #bbb" />
+                }
+                               
+            </div>
+           
+        </div>
+
+    </div>
+
+</form>
+
+@section Scripts {
+   @{<partial name="_ValidationScriptsPartial" />}
+   
+  
+}

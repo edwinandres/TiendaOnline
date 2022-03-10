@@ -24,16 +24,20 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Categoria" asp-action="Index">Categorias</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Contenido
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Categoria" asp-action="Index">Categorias</a></li>
+                                <li> <a class="nav-link text-dark" asp-area="" asp-controller="TipoAplicacion" asp-action="Index">Tipo aplicación</a></li>
+                                <li> <a class="nav-link text-dark" asp-area="" asp-controller="Producto" asp-action="Index">Productos</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="TipoAplicacion" asp-action="Index">Tipo aplicación</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Producto" asp-action="Index">Productos</a>
-                        </li>
+
                     </ul>
+
+
                 </div>
             </div>
         </nav>
@@ -54,7 +58,7 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-"
+    "
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

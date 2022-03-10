@@ -88,13 +88,22 @@
                         }
                         else
                         {
-                             <button type="submit" onclick="retur validarImagen()" class="btn btn-primary">Crear</button>
+                             <button type="submit" onclick="return validarImagen()" class="btn btn-primary">Crear</button>
                         }
                         <a asp-controller="Producto" asp-action="Index" class="btn btn-success">Regresar</a>
                     </div>
 
                 </div>
             </div>
+           
+            <div class="col-4">
+                @if(Model.Producto.Id != 0)
+                {
+                    <img src="@WC.ImagenRuta@Model.Producto.ImageUrl" width="100%" style="border-radius: 5px border:1px solid #bbb" />
+                }
+                               
+            </div>
+           
         </div>
 
     </div>

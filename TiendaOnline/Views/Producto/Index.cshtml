@@ -37,8 +37,8 @@
                     <tr>
                         <td>@item.NombreProducto</td>
                         <td>@item.Precio</td>
-                        <td>@item.Categoria</td>
-                        <td>@item.TipoAplicacion</td>
+                        <td>@item.Categoria.NombreCategoria</td>
+                        <td>@item.TipoAplicacion.Nombre</td>
                         <td  class="text-center">
                             <div class="w-75 btn-group" role="group">
                                 <a asp-controller="Producto" asp-action="Upsert" asp-route-Id="@item.Id" class="btn btn-primary mx-2">

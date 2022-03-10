@@ -8,77 +8,81 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TiendaOnline
 build_property.RootNamespace = TiendaOnline
-build_property.ProjectDir = c:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\
+build_property.ProjectDir = C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\pazam\source\repos\TiendaOnline\TiendaOnline
+build_property.MSBuildProjectDirectory = C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Categoria/Create.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Categoria/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Categoria/Delete.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Categoria/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Categoria/Edit.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Categoria/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Categoria/Index.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Categoria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Home/Index.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Home/Privacy.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Producto/Index.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Producto/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Producto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Producto/Upsert.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Producto/Upsert.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cVXBzZXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Shared/Error.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/TipoAplicacion/Create.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/TipoAplicacion/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0FwbGljYWNpb25cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/TipoAplicacion/Delete.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/TipoAplicacion/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0FwbGljYWNpb25cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/TipoAplicacion/Edit.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/TipoAplicacion/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0FwbGljYWNpb25cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/TipoAplicacion/Index.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/TipoAplicacion/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0FwbGljYWNpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/_ViewImports.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/_ViewStart.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Shared/_Layout.cshtml]
+[C:/Users/pazam/source/repos/TiendaOnline/TiendaOnline/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lch2ceubej
