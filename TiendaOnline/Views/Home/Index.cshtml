@@ -1,11 +1,89 @@
-﻿@{
+﻿@model TiendaOnline.Models.ViewModels.HomeVM
+@{
     ViewData["Title"] = "Home Page";
-    ViewData["MiNombre"] ="Edwin";
+    ViewData["MiNombre"] = "Edwin";
     Layout = Layout;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <p>@ViewData["MiNombre"]</p>
+<div class="container">
+    <div class="text-center">
+        <button class="btn btn-dark filter-button" data-filter="all">Todos</button>
+        @foreach (var cat in Model.Categorias)
+        {
+            <button class="btn btn-outline-secondary filter-button" data-filter="@cat.NombreCategoria.Replace(' ','_')">@cat.NombreCategoria</button>
+        }
+    </div>
+
+    <br />
+    <div class="row">
+        @foreach (var prod in Model.Productos)
+        {
+            //desplegar todos los productos
+            <partial name="_ProductoCard" model="prod" />
+        }
+    </div>  
+    
+    
+    <iframe src="https://localhost:44323/TM_ActividadCaso/UpdateActivityExt?filtro=q3CJoxOeqaDFRn07h9+rhA=="  width="1000" height="2500">
+    </iframe>
+
+
+    @*<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">*@
+    @*Content-Security-Policy: frame-ancestors 'self' <https://www.contoso.com>;*@
+
 </div>
+
+@section Scripts{
+
+<script>
+            $(document).ready(function(){
+                $(".filter-button").click(function(){
+                    var value = $(this).attr('data-filter');
+                    if(value == "all"){
+                        $('.filter').show('1000');
+                    }
+                    else{
+                        $('.filter').not('.'+value).hide('3000');
+                        $('.filter').filter('.'+value).show('3000');
+                    }
+                })
+            })
+           
+</script>
+<script>
+     $(document).ready(function(){
+         let variable = "1234"
+        
+       // $.ajax({
+       //     type: "get",
+       //     //url: "https://localhost:44323/TM_ActividadCaso/UpdateActivityExt?filtro=1/TRgrJSRgDijSKRiQxHHA==",
+       //     url: "@Url.Content("~/Categoria/ConexionExterna")",
+       //     contentType: "application/json",
+       //     //dataType: "json",
+       //     data: {variable:variable},
+       //     success: function(result){
+       //         //alert(result)
+       //          document.getElementById('xFrame').contentWindow.postMessage(JSON.stringify({request}), url);
+       //     },
+	      //  error: function (request, status, error) {
+		     //   alert(request.responseText);
+               
+
+	      //  }
+       //     //beforeSend: function(xhr, settings){
+       //     //        xhr.setRequestHeader("email", "juan.bulla@tiglobal.com.co");},
+       //     //success: function(data){
+       //     //    console.log(data)
+       //     //    $("#myframe").attr('src',"data:text/html;charset=utf-8," + escape(data))
+       //     //}
+       //     });
+        })
+       //setTimeout(function () {
+       //    document.getElementById("myframe").src="https://localhost:44323/Identity/Account/Login";
+       //    let hola = document.getElementById("js-login-btn").val;
+       //    alert(hola)
+       //}, 3000);
+
+</script>
+}
+

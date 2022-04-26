@@ -7,7 +7,6 @@ C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\TiendaOnl
 C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\TiendaOnline.dll
 C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\ref\TiendaOnline.dll
 C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\TiendaOnline.pdb
-C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\obj\Debug\net6.0\TiendaOnline.csproj.AssemblyReference.cache
 C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\obj\Debug\net6.0\TiendaOnline.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\obj\Debug\net6.0\TiendaOnline.AssemblyInfoInputs.cache
 C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\obj\Debug\net6.0\TiendaOnline.AssemblyInfo.cs
@@ -261,3 +260,16 @@ C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\zh-Hans\M
 C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\obj\Debug\net6.0\TiendaOnline.csproj.AssemblyReference.cache
+C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\obj\Debug\net6.0\TiendaOnline.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\pazam\source\repos\TiendaOnline\TiendaOnline\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll

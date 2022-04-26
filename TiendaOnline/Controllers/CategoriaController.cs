@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TiendaOnline.Data;
 using TiendaOnline.Models;
+//using System.Windows.Forms;
 
 namespace TiendaOnline.Controllers
 {
@@ -90,6 +91,22 @@ namespace TiendaOnline.Controllers
             _db.Categoria.Remove(categoria);
             _db.SaveChanges();
             return RedirectToAction(nameof(Index));               
+        }
+
+       
+        public string ConexionExterna(string? variable)
+        {
+            // WebBrowser browser = new WebBrowser()
+            //string url = "https://localhost:44323/Identity/Account/Login";
+            //using( var httpCliente = new HttpClient())
+            //{
+            //    var persona3 = new Persona() { Email = "juan.bulla@ti" };
+            //    var respuesta = await httpClient.PostAsJsonAsync(url, persona3);
+            //}
+            string _variable = variable;
+            return _variable;
+
+            //revisar esta pagina = https://docs.microsoft.com/es-es/aspnet/core/security/authentication/identity-configuration?view=aspnetcore-6.0
         }
     }
 }

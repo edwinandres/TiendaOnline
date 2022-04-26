@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@using TiendaOnline.Utilidades
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -9,6 +13,17 @@
     <link rel="stylesheet" href="~/TiendaOnline.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/fontawesome/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'  https://localhost:44323/; 
+            img-src 'self' 'unsafe-inline'; 
+            font-src 'self';
+            script-src 'self' https://localhost 'unsafe-eval' https://unpkg.com/sweetalert/dist/sweetalert.min.js  'unsafe-inline'; object-src 'self' 'unsafe-inline';  
+            connect-src 'self' 'unsafe-inline';
+            object-src 'self'
+    ">
+    @*<meta http-equiv="content-security-policy" content="font-src  'unsafe-inline' https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/font/summernote"*@
+     @*<meta http-equiv="Content-Security-Policy" content="default-src 'self'; https://localhost:44323/; ">*@
+      @*<meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline' https://localhost:44323/; style-src 'self' 'unsafe-inline' ;script-src 'self' 'unsafe-inline' ">*@
+      @*<meta http-equiv="X-Frame-Options" content="allowall">*@
 </head>
 <body>
     <header>
@@ -19,7 +34,8 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between flex-row-reverse">
+                    <partial name="_loginPartial" />
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
@@ -32,8 +48,28 @@
                                 <li><a class="nav-link text-dark" asp-area="" asp-controller="Categoria" asp-action="Index">Categorias</a></li>
                                 <li> <a class="nav-link text-dark" asp-area="" asp-controller="TipoAplicacion" asp-action="Index">Tipo aplicación</a></li>
                                 <li> <a class="nav-link text-dark" asp-area="" asp-controller="Producto" asp-action="Index">Productos</a></li>
+                                 <li> <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Crear nuevo usuario</a></li>
                             </ul>
                         </li>
+                        <li>
+                            @if(HttpContextAccessor.HttpContext.Session.Get<List<CarroCompras>>(WC.SessionCarroCompras) != null)
+                            {
+                                <a asp-action="Index" asp-controller="Carro" class="nav-link">
+                                    @{
+                                        var count = HttpContextAccessor.HttpContext.Session.Get<List<CarroCompras>>(WC.SessionCarroCompras).Count();
+                                    }
+                                    <i class="fas fa-shopping-cart"></i>&nbsp;(@count)
+                                </a>
+                            }
+                            else
+                            {
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-shopping-cart"></i>&nbsp;(0)
+                                </a>
+                            }
+                        </li>
+                        
+                       
 
                     </ul>
 
